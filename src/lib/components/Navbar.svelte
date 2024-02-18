@@ -5,8 +5,8 @@
 </script>
 
 <div class="w-full centered text-white z-30 flex justify-between items-center bg-[#212121] h-[90px] fixed max-w-[1500px] pl-5 pr-2 mx-auto">
-    <h1 class="font-bold text-2xl">Ved.jx</h1>
-    <ul class="lg:flex hidden font-semibold">
+    <h1 class="font-bold text-2xl text-[#50d89b]">Ved.jx</h1>
+    <ul class="lg:flex hidden text-xl font-semibold">
         <a href="/" on:click={() => menuOpen = false}><li class="px-3">Home</li></a>
         <a href="services" on:click={() => menuOpen = false}><li class="px-3">Services</li></a>
         <a href="about" on:click={() => menuOpen = false}><li class="px-3">About Us</li></a>

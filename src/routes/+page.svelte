@@ -1,4 +1,8 @@
-<div class="px-5 pt-[90px]">
-    <h1 class="font-bold">Home page</h1>
+<script>
+    import Hero from '$lib/components/Hero.svelte';
+</script>
+
+<div class="px-5">
+    <Hero />
 </div>
 
