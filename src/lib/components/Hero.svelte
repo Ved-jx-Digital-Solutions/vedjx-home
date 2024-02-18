@@ -10,12 +10,12 @@
         Digital Solutions
     </h1>
 
-    <div class="flex text-[20px] md:text-[30px] font-semibold text-[#50d89b]">
-        &nbsp;
-        <Typewriter mode="loopOnce" cursor={false} interval={[66, 76, 74, 70, 63, 54, 63, 64, 74, 64]}>
-            <p class="uppercase">Custom solutions...</p>
-            <p class="uppercase">Knoxville based...</p>
-            <p class="uppercase">grow your business</p>
+    <div class="flex text-[20px] uppercase md:text-[30px] font-semibold ">
+        We provide&nbsp;
+        <Typewriter mode="loop" cursor={false} interval={[66, 76, 74, 70, 63, 54, 63, 64, 74, 64]}>
+            <p class="text-[#50d89b]">Custom solutions...</p>
+            <p class="text-[#50d89b]">concise user interfaces...</p>
+            <p class="text-[#50d89b]">a digital identity</p>
         </Typewriter>
     </div>
 
