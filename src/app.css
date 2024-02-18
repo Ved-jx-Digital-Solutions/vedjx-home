@@ -7,10 +7,15 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #000000;
+    scroll-behavior: smooth;
 }
 
 .centered {
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.noScroll {
+    overflow: hidden;
 }
