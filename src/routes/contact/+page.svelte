@@ -3,6 +3,6 @@
 </script>
 
 <Navbar />
-<div class="px-5 pt-[70px]">
+<div class="px-5 pt-[90px]">
     <h1>contact page</h1>
 </div>
