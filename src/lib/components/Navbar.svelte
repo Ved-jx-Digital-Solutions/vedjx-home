@@ -4,24 +4,26 @@
     let menuOpen = false;
 
     const handleOpen = () => {
-        menuOpen = !menuOpen
+        menuOpen = true
         document.body.classList.add("noScroll")
     }
 
     const handleClose = () => {
-        menuOpen = !menuOpen
-        document.body.classList.remove("noScroll")
+        menuOpen = false
+        if (document.body.classList.contains("noScroll")) {
+            document.body.classList.remove("noScroll")
+        }
     }
 </script>
 
 <div class="w-screen bg-[#212121] fixed h-[90px] z-40">
     <div class="w-full centered text-white flex justify-between items-center h-[90px] fixed max-w-[1500px] pl-5 pr-2 mx-auto">
-        <a href="/" on:click={() => handleOpen()}><h1 class="font-bold text-2xl text-[#50d89b]">Ved.jx</h1></a>
+        <a href="/" on:click={() => handleClose()}><h1 class="font-bold text-2xl text-[#50d89b]">Ved.jx</h1></a>
         <ul class="lg:flex hidden text-xl font-semibold">
-            <a href="/" on:click={() => handleOpen()}><li class="px-3">Home</li></a>
-            <a href="services" on:click={() => handleOpen()}><li class="px-3">Services</li></a>
-            <a href="about" on:click={() => handleOpen()}><li class="px-3">About Us</li></a>
-            <a href="contact" on:click={() => handleOpen()}><li class="px-3">Contact</li></a>
+            <a href="/" on:click={() => handleClose()}><li class="px-3">Home</li></a>
+            <a href="services" on:click={() => handleClose()}><li class="px-3">Services</li></a>
+            <a href="about" on:click={() => handleClose()}><li class="px-3">About Us</li></a>
+            <a href="contact" on:click={() => handleClose()}><li class="px-3">Contact</li></a>
         </ul>
     
         <!-- Hamburger menu -->
