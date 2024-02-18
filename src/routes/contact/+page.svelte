@@ -3,8 +3,6 @@
 </script>
 
 <Navbar />
-
 <div class="px-5 pt-[70px]">
-    <h1 class="font-bold">Home page</h1>
+    <h1>contact page</h1>
 </div>
-
