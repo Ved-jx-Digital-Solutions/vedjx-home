@@ -1,3 +1,7 @@
+<script>
+    import Icon from '@iconify/svelte';
+</script>
+
 <div class="px-5 h-screen w-full text-white flex justify-center items-center">
     <div class="md:h-[30vh] text-2xl flex flex-col justify-center items-center h-screen md:max-h-[500px] md:max-w-[600px] w-full md:min-w-[200px] md:min-h-[400px]">
         <Icon class="text-[100px]" icon="solar:sad-circle-line-duotone" />

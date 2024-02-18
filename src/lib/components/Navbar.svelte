@@ -45,7 +45,7 @@
 </div>
 
 {#if menuOpen}
-    <button class={`${menuOpen ? 'right-0' : 'right-[-100%]'} lg:hidden overflow-x-hidden overflow-y-hidden w-full cursor-auto h-screen fixed top-0 right-0 bg-gray-500/20 blur-lg`} on:click={() => handleMenu()}></button>
+    <button class={`${menuOpen ? 'right-0' : 'right-[-100%]'} lg:hidden overflow-x-hidden overflow-y-hidden w-full cursor-auto h-screen fixed top-0 right-0 bg-gray-500/20`} on:click={() => handleMenu()}></button>
 {/if}
 
 <div class={`transition-all z-30 uppercase bg-[#0b0b0b] font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-150 ${menuOpen ? 'right-0' : 'md:right-[-40%] right-[-250px]'} fixed pt-[90px] w-[250px] top-0 md:w-[40%] h-full border-l border-gray-600`}>
