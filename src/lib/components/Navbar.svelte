@@ -4,11 +4,6 @@
 
     let menuOpen = false;
 
-    const handleOpen = () => {
-        menuOpen = true
-        document.body.classList.add("noScroll")
-    }
-
     const handleClose = () => {
         menuOpen = false
         if (document.body.classList.contains("noScroll")) {
