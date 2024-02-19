@@ -16,7 +16,7 @@
 
 {#if transitionReady}
     <div in:fade class="h-screen w-full flex flex-col justify-center items-center">
-        <h1 class="font-bold md:text-[65px] mb-[-20px] text-[40px] w-[300px]">
+        <h1 class="font-bold md:text-[65px] mb-[-15px] text-[40px] w-[300px]">
             {@html Logo}
         </h1>
         <h1 class="font-bold md:text-[65px] text-[40px] pb-3">
