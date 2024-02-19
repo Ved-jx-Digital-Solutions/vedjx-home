@@ -1,5 +1,6 @@
 <script>
     import Icon from '@iconify/svelte';
+    import Logo from '$lib/images/Logo.svg?raw';
 
     let menuOpen = false;
 
@@ -29,7 +30,9 @@
 
 <div class="w-screen bg-[#212121] fixed h-[90px] z-40">
     <div class="w-full centered text-white flex justify-between items-center h-[90px] fixed max-w-[1500px] pl-5 pr-2 mx-auto">
-        <a href="/" on:click={() => handleClose()}><h1 class="font-bold text-2xl text-[#50d89b]">Ved.jx</h1></a>
+        <a href="/" on:click={() => handleClose()}><h1 class="w-[100px]">
+            {@html Logo}
+        </h1></a>
         <ul class="lg:flex hidden text-xl font-semibold">
             <a href="/" on:click={() => handleClose()}><li class="px-3">Home</li></a>
             <a href="services" on:click={() => handleClose()}><li class="px-3">Services</li></a>
