@@ -18,7 +18,7 @@
 
     const handleMenu = () => {
         menuOpen = !menuOpen
-        console.log("yo")
+
         if (document.body.classList.contains("noScroll")) {
             document.body.classList.remove("noScroll")
         }
@@ -28,30 +28,30 @@
     }
 </script>
 
-<div class="w-screen bg-[#212121] fixed h-[90px] z-40">
+<div class="w-screen bg-[#000000] fixed h-[90px] z-40">
     <div class="w-full centered text-white flex justify-between items-center h-[90px] fixed max-w-[1500px] pl-5 pr-2 mx-auto">
         <a href="/" on:click={() => handleClose()}><h1 class="w-[100px]">
             {@html Logo}
         </h1></a>
         <ul class="lg:flex hidden text-xl font-semibold">
-            <a href="/" on:click={() => handleClose()}><li class="px-3">Home</li></a>
-            <a href="services" on:click={() => handleClose()}><li class="px-3">Services</li></a>
-            <a href="about" on:click={() => handleClose()}><li class="px-3">About Us</li></a>
-            <a href="contact" on:click={() => handleClose()}><li class="px-3">Contact</li></a>
+            <a href="/" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Home</li></a>
+            <a href="services" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Services</li></a>
+            <a href="about" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">About Us</li></a>
+            <a href="contact" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Contact</li></a>
         </ul>
     
         <!-- Hamburger menu -->
-        <button class={`lg:hidden text-[35px] p-3 transition-all ease-in-out rounded-xl duration-150 ${menuOpen ? 'bg-[#121212]' : 'bg-[#212121]'}`} on:click={() => handleMenu()} >
+        <button class={`lg:hidden text-[35px] p-3 transition-all ease-in-out rounded-xl duration-150 ${!menuOpen ? 'bg-[#000000]' : 'bg-[#38c5fd]'}`} on:click={() => handleMenu()} >
             <Icon icon="lucide:menu" />
         </button>
     </div>
 </div>
 
 {#if menuOpen}
-    <button class={`${menuOpen ? 'right-0' : 'right-[-100%]'} lg:hidden overflow-x-hidden overflow-y-hidden w-full cursor-auto h-screen fixed top-0 right-0 bg-gray-500/20`} on:click={() => handleMenu()}></button>
+    <button class={`${menuOpen ? 'left-0' : 'left-[-100%]'} lg:hidden overflow-x-hidden overflow-y-hidden w-full cursor-auto h-screen fixed top-0 left-0 bg-gray-900/50`} on:click={() => handleMenu()}></button>
 {/if}
 
-<div class={`transition-all z-30 uppercase bg-[#0b0b0b] font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-150 ${menuOpen ? 'right-0' : 'md:right-[-40%] right-[-250px]'} fixed pt-[90px] w-[250px] top-0 md:w-[40%] h-full border-l border-gray-600`}>
+<div class={`transition-all z-30 uppercase bg-[#0b0b0b] font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-150 ${menuOpen ? 'left-0' : 'md:left-[-40%] left-[-250px]'} fixed pt-[90px] w-[250px] top-0 md:w-[40%] h-full border-r border-gray-600`}>
     <ul>
         <a href="/" on:click={() => handleClose()}>
             <li class="p-4 border-b border-gray-600">Home</li>
