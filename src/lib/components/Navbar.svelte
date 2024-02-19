@@ -28,7 +28,7 @@
     }
 </script>
 
-<div class="w-screen fixed bgColor h-[90px] z-40">
+<div class="w-screen fixed bg-[#1f1f1f] h-[90px] z-40">
     <div class="w-full centered text-white flex justify-between items-center h-[90px] fixed max-w-[1500px] pl-5 pr-2 mx-auto">
         <a href="/" on:click={() => handleClose()}><h1 class="w-[100px]">
             {@html Logo}
@@ -41,7 +41,7 @@
         </ul>
     
         <!-- Hamburger menu -->
-        <button class={`lg:hidden text-[35px] p-3 transition-all ease-in-out rounded-xl duration-150 ${!menuOpen ? 'bg-[#000000]' : 'bg-[#38c5fd]'}`} on:click={() => handleMenu()} >
+        <button class={`lg:hidden text-[35px] p-3 transition-all ease-in-out rounded-xl duration-150 ${!menuOpen ? '' : 'bg-[#0b0b0b]'}`} on:click={() => handleMenu()} >
             <Icon icon="lucide:menu" />
         </button>
     </div>
@@ -52,7 +52,7 @@
 {/if}
 
 <div class={`transition-all z-30 uppercase bg-[#0b0b0b] font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-150 ${menuOpen ? 'left-0' : 'md:left-[-40%] left-[-250px]'} fixed pt-[90px] w-[250px] top-0 md:w-[40%] h-full border-r border-gray-600`}>
-    <ul>
+    <ul class="text-right">
         <a href="/" on:click={() => handleClose()}>
             <li class="p-4 border-b border-gray-600">Home</li>
         </a>
