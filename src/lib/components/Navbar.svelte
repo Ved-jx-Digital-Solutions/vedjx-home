@@ -32,6 +32,7 @@
             <a href="/" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Home</li></a>
             <a href="services" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Services</li></a>
             <a href="about" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">About Us</li></a>
+            <a href="request-quote" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Quote</li></a>
             <a href="contact" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Contact</li></a>
         </ul>
     
@@ -56,6 +57,9 @@
         </a>
         <a href="about" on:click={() => handleClose()}>
             <li class="p-4 border-b border-gray-600">About Us</li>
+        </a>
+        <a href="request-quote" on:click={() => handleClose()}>
+            <li class="p-4 border-b border-gray-600">Quote</li>
         </a>
         <a href="contact" on:click={() => handleClose()}>
             <li class="p-4">Contact</li>
