@@ -29,11 +29,11 @@
             {@html Logo}
         </h1></a>
         <ul class="lg:flex hidden text-xl font-semibold">
-            <a href="/" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Home</li></a>
-            <a href="services" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Services</li></a>
-            <a href="about" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">About Us</li></a>
-            <a href="request-quote" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Quote</li></a>
-            <a href="contact" on:click={() => handleClose()}><li class="px-3 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Contact</li></a>
+            <a href="/" on:click={() => handleClose()}><li class="px-4 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Home</li></a>
+            <a href="services" on:click={() => handleClose()}><li class="px-4 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Services</li></a>
+            <a href="about" on:click={() => handleClose()}><li class="px-4 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">About Us</li></a>
+            <a href="request-quote" on:click={() => handleClose()}><li class="px-4 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Free Quote</li></a>
+            <a href="contact" on:click={() => handleClose()}><li class="px-4 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Contact</li></a>
         </ul>
     
         <!-- Hamburger menu -->
@@ -47,22 +47,22 @@
     <button class={`${menuOpen ? 'left-0' : 'left-[-100%]'} lg:hidden overflow-x-hidden overflow-y-hidden w-full cursor-auto h-screen fixed top-0 left-0 bg-gray-900/50`} on:click={() => handleMenu()}></button>
 {/if}
 
-<div class={`transition-all z-30 uppercase bg-[#0b0b0b] font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-150 ${menuOpen ? 'left-0' : 'md:left-[-40%] left-[-250px]'} fixed pt-[90px] w-[250px] top-0 md:w-[40%] h-full border-r border-gray-600`}>
-    <ul class="text-right">
+<div class={`transition-all z-30 text-[125%] uppercase bg-[#0b0b0b] font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-150 ${menuOpen ? 'left-0' : 'md:left-[-40%] left-[-250px]'} fixed pt-[90px] w-[250px] top-0 md:w-[40%] h-full border-r border-gray-600`}>
+    <ul class="text-right font-bold">
         <a href="/" on:click={() => handleClose()}>
-            <li class="p-4 border-b border-gray-600">Home</li>
+            <li class="p-5 border-b border-gray-600 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Home</li>
         </a>
         <a href="services" on:click={() => handleClose()}>
-            <li class="p-4 border-b border-gray-600">Services</li>
+            <li class="p-5 border-b border-gray-600 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Services</li>
         </a>
         <a href="about" on:click={() => handleClose()}>
-            <li class="p-4 border-b border-gray-600">About Us</li>
+            <li class="p-5 border-b border-gray-600 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">About Us</li>
         </a>
         <a href="request-quote" on:click={() => handleClose()}>
-            <li class="p-4 border-b border-gray-600">Quote</li>
+            <li class="p-5 border-b border-gray-600 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Free Quote</li>
         </a>
         <a href="contact" on:click={() => handleClose()}>
-            <li class="p-4">Contact</li>
+            <li class="p-5 duration-150 ease-in-out transition-all hover:text-[#38c5fd]">Contact</li>
         </a>
     </ul>
 </div>
