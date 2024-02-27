@@ -23,7 +23,7 @@
     }
 </script>
 
-<div class="w-screen fixed bg-[#1f1f1f] h-[90px] z-40">
+<div class="w-screen fixed bg-[#041d22] h-[90px] z-40">
     <div class="w-full centered text-white flex justify-between items-center h-[90px] fixed max-w-[1500px] pl-5 pr-2 mx-auto">
         <a href="/" on:click={() => handleClose()}><h1 class="w-[100px]">
             {@html Logo}
